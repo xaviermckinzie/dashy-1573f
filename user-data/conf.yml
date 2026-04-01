@@ -1,46 +1,381 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Home Lab & New Tab
+  description: Lots of links and stuff
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: GMail
+      path: http://mail.sandxdesigns.com/
+      target: sametab
+    - title: Home
+      path: http://www.demo.org/
+      target: sametab
+    - title: Dashy GitHub
+      path: https://github.com/lissy93/dashy
+    - title: Dashy Docs
+      path: https://dashy.to/docs/
+      target: newtab
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: default
+  layout: horizontal
+  iconSize: large
+  language: en
+  defaultIcon: favicon
+  allowConfigEdit: true
+  showSplashScreen: false
+  defaultOpeningMethod: sametab
+  hideComponents:
+    hideFooter: true
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
+  - name: Work / Core Apps
+    displayData:
+      sortBy: default
+      cols: 3
+      rows: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: M365 Apps
+        description: M365 Apps
+        icon: >-
+          https://cdn.brandfetch.io/idchmboHEZ/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1727706673120
+        url: https://www.microsoft365.com/apps?auth=2&home=1
+        statusCheck: true
+        statusCheckInterval: 0
+        id: 0_1359_mapps
+      - title: NetSuite
+        description: Oracle NetSuite
+        url: https://5115644.app.netsuite.com/app/center/card.nl?sc=-29&whence=
+        icon: favicon
+        id: 1_1359_netsuite
+      - title: ConnectWise
+        description: ConnectWise CPQ
+        url: >-
+          https://cumberlandgroupit.quosalsell.com/QuosalWeb/home?accesskey=cumberlandgroupit_azure&idquotemain=q639093535074932261zbQcCbI
+        icon: >-
+          https://media.licdn.com/dms/image/v2/C4D0BAQEVlCxeSSDfQA/company-logo_200_200/company-logo_200_200/0/1636583622576/connectwise_logo?e=2147483647&v=beta&t=z7gLQ7VM4qFqgR6LqBDuDDxM2KS63KQRyURUF6fongQ
+        id: 2_1359_connectwise
+      - title: OneDrive
+        description: MS OneDrive
+        icon: >-
+          https://cdn.brandfetch.io/idchmboHEZ/theme/dark/id7XoMseyT.svg?c=1bxid64Mup7aczewSAYMX&t=1767862144868
+        url: https://cumberlandgroupllc-my.sharepoint.com/
+        id: 3_1359_onedrive
+      - title: ECE
+        description: TechData ECE
+        icon: >-
+          https://cdn.brandfetch.io/id7au4bL4O/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1771800164389
+        url: https://ec.synnex.com/ecx/
+        id: 4_1359_ece
+      - title: Sunset Learning
+        description: Sunset Learning Institute
+        icon: >-
+          https://cdn.brandfetch.io/id62FWMgMd/w/1500/h/1128/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1771348483356
+        url: https://slivcampus.sunsetlearning.com/
+        id: 5_1359_sunsetlearning
+      - title: MyIntelisys
+        description: Intelisys Partner Portal
+        icon: >-
+          https://cdn.brandfetch.io/idz2vB_2ny/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1774036929417
+        url: https://www.myintelisys.com/
+        id: 6_1359_myintelisys
+      - title: CG WCH
+        description: CG Webex Control Hub
+        url: https://admin.webex.com/login?email=xavier.mckinzie@cumberland.com
+        icon: favicon
+        id: 7_1359_cgwch
+      - title: Sharefile
+        description: Progress Sharefile
+        url: https://cumberlandgroupit.sharefile.com/dashboard
+        icon: >-
+          https://cdn.brandfetch.io/idGBJEK_zh/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1672192403572
+        id: 8_1359_sharefile
+      - title: ZoomUp
+        description: Zoom Up Partner Portal
+        url: https://mypartnerportal.zoom.us/s
+        icon: favicon
+        id: 9_1359_zoomup
+      - title: Zoom Learning
+        description: Zoom Learning Portal
+        icon: >-
+          https://cdn.brandfetch.io/id3aO4Szj3/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1667574547253
+        url: https://partner-learning.zoom.us/learn/catalog
+        id: 10_1359_zoomlearning
+  - name: Cisco Sales & Partner Tools
+    displayData:
+      sortBy: default
+      cols: 3
+      rows: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: CCW
+        description: Cisco Commerce Workspace
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://apps.cisco.com/ccw/cpc/home
+        id: 0_2428_ccw
+      - title: SalesConnect
+        description: SalesConnect/ Resources
+        url: https://salesresources.cisco.com/
+        icon: favicon
+        id: 1_2428_salesconnect
+      - title: Seller Rewards
+        description: Seller Rewards
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://sellerrewards.cisco.com
+        id: 2_2428_sellerrewards
+      - title: Workspace Designer
+        description: Workspace Designer
+        url: https://www.webex.com/us/en/workspaces/workspace-designer.html
+        icon: favicon
+        id: 3_2428_workspacedesigner
+      - title: Cisco Learning Network
+        description: Cisco Learning Network Space
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://learningspace.cisco.com/
+        id: 4_2428_ciscolearningnetwork
+      - title: Cisco U
+        description: Cisco U
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://u.cisco.com/for-you
+        id: 5_2428_ciscou
+      - title: Partner Tools
+        description: Cisco Partner Tools
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/cisco.svg
+        url: https://cisco.com/go/partnertools
+        id: 6_2428_partnertools
+      - title: Partner CSH
+        description: Customer Service Hub (XaaS Cases)
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://customerservice.cloudapps.cisco.com
+        id: 7_2428_partnercsh
+    icon: >-
+      https://apps.cisco.com/Commerce/staticContent/ngws_MARCHMR_031526V1/images/vNextCiscologo.png
+  - name: Webex Contact Center Demos, Labs, and Developer
+    displayData:
+      sortBy: default
+      rows: 3
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Collab Toolbox
+        description: Cisco Trials, Sandbox, and Labs
+        url: https://collabtoolbox.cisco.com/
+        icon: favicon
+        id: 0_4243_collabtoolbox
+      - title: Demo Toolbox
+        description: Webex Demos
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://demotoolbox.cat-dcloud.com/
+        id: 1_4243_demotoolbox
+      - title: 'WxCC Partner Success '
+        description: WxCC Partner Success Portal
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://cisco.sharepoint.com/sites/WxCCPartnerEnablement
+        id: 2_4243_wxccpartnersuccess
+      - title: Airtable
+        description: RESTAPI Supported Database for FREE
+        icon: favicon
+        url: https://www.airtable.com/
+        statusCheck: true
+        statusCheckInterval: 0
+        id: 3_4243_airtable
+      - title: CE UI Editor
+        description: Cisco CE UI Editor (Standalone)
+        icon: favicon
+        url: https://github.com/cisco-ce/uieditor-standalone
+        id: 4_4243_ceuieditor
+      - title: Webex CC Labs
+        description: Webex CC Lab guides · Labs Library
+        icon: favicon
+        url: ' https://webexcc.github.io/'
+        id: 5_4243_webexcclabs
+      - title: WxConnect Sandbox
+        description: Webex Connect Sandbox
+        icon: favicon
+        url: https://sandbox.us.webexconnect.io/
+        id: 6_4243_wxconnectsandbox
+      - title: UI Extensions Simulator
+        icon: >-
+          https://cdn.brandfetch.io/idZAyF9rlg/theme/light/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1719469980826
+        url: https://cisco-ce.github.io/room-simulator/
+        id: 7_4243_uiextensionssimulator
+  - name: Support / Operations
+    displayData:
+      sortBy: default
+      rows: 3
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Webex User Portal
+        description: Webex User Settings Portal
+        icon: favicon
+        url: https://user.webex.com/login
+        id: 0_1936_webexuserportal
+      - title: WxCC Desktop
+        url: https://desktop.wxcc-us1.cisco.com/
+        icon: >-
+          https://cdn.brandfetch.io/idtxaPRefk/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1673970671028
+        id: 1_1936_wxccdesktop
+      - title: Microsoft Service Health Status
+        icon: >-
+          https://cdn.brandfetch.io/idchmboHEZ/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1727706673120
+        url: https://status.cloud.microsoft/
+        id: 2_1936_microsoftservicehealthstatus
+  - name: Vendor Resources
+    displayData:
+      sortBy: default
+      rows: 3
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Five9 Partner Portal
+        url: https://partners.five9.com/s/
+        icon: >-
+          https://cdn.brandfetch.io/idG7vGH9db/w/320/h/320/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1772324092929
+        id: 0_1609_fivepartnerportal
+      - title: Intelepeer Customer Portal
+        url: https://customer.intelepeer.com/
+        icon: >-
+          https://cdn.brandfetch.io/idZJm5suNY/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1670421059283
+        id: 1_1609_intelepeercustomerportal
+      - title: RedSky On-Prem Calling
+        icon: >-
+          https://images.g2crowd.com/uploads/product/hd_favicon/1d215fb1f87278c4c82734e3f177058e/redsky-technologies-an-everbridge-company.svg
+        url: ' https://anywhere.e911cloud.com/login'
+        id: 2_1609_redskyonpremcalling
+      - title: RedSky WxC
+        description: 'RedSky WxC Subscriptions '
+        icon: >-
+          https://images.g2crowd.com/uploads/product/hd_favicon/1d215fb1f87278c4c82734e3f177058e/redsky-technologies-an-everbridge-company.svg
+        url: https://wxc.e911cloud.com/
+        id: 3_1609_redskywxc
+      - title: 2Ring Demo
+        icon: >-
+          https://cdn.brandfetch.io/idw_HXPbpd/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1772474652911
+        url: http://2ring.com/TryItWxCC
+        id: 4_1609_ringdemo
+      - title: Akkadian Labs Portal
+        icon: favicon
+        url: https://portal.licycle.net/login
+        id: 5_1609_akkadianlabsportal
+  - name: Home Lab
+    displayData:
+      sortBy: default
+      rows: 3
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Radarr - Movies
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/radarr-4k.svg
+        url: http://radarr.sandx.lan/
+        statusCheck: true
+        statusCheckInterval: 0
+        id: 0_696_radarrmovies
+      - title: Sonarr - TV Shows
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/sonarr-4k.svg
+        url: http://sonarr.sandx.lan/
+        statusCheck: true
+        statusCheckInterval: 0
+        id: 1_696_sonarrtvshows
+      - title: SABnzbd
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/sabnzbd.svg
+        url: http://sabnzbd.sandx.lan/
+        statusCheck: true
+        statusCheckInterval: 0
+        id: 2_696_sabnzbd
+      - title: Portainer by IP
+        description: Portainer (bypass proxy using IP)
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/portainer-dark.svg
+        url: https://192.168.128.112:9443/#!/home
+        statusCheck: true
+        statusCheckInterval: 0
+        id: 3_696_portainerbyip
+      - title: Nginx PM
+        description: Nginx Proxy Manager
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/nginx-proxy-manager.svg
+        url: http://proxy.sandx.lan/
+        statusCheck: true
+        statusCheckAllowInsecure: true
+        statusCheckInterval: 0
+        id: 4_696_nginxpm
+      - title: pfSense Firewall
+        description: ''
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/pfsense.svg
+        url: https://fw.sandx.lan:8224/
+        statusCheck: true
+        statusCheckAllowInsecure: true
+        statusCheckInterval: 0
+        id: 5_696_pfsensefirewall
+      - title: Plex
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/plex.svg
+        url: http://plex.sandx.lan/
+        statusCheck: true
+        statusCheckInterval: 0
+        id: 6_696_plex
+      - title: Audio Bookshelf
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/audiobookshelf.svg
+        url: http://audiobookshelf.sandx.lan/
+        statusCheck: true
+        statusCheckAllowInsecure: true
+        statusCheckInterval: 0
+        id: 7_696_audiobookshelf
+      - title: Podgrab
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/podgrab.png
+        url: http://podgrab.sandx.lan/
+        statusCheck: true
+        statusCheckAllowInsecure: true
+        statusCheckInterval: 0
+        id: 8_696_podgrab
+  - name: LLM and AI
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Open WebUI (Local PC)
+        icon: >-
+          https://cdn.brandfetch.io/id-hVPEl-N/w/1000/h/1000/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1770832591835
+        url: http://localhost:8080/
+        id: 0_738_openwebuilocalpc
+      - title: ChatGPT
+        icon: >-
+          https://cdn.brandfetch.io/id2UDPob7G/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1741663805615
+        url: https://chatgpt.com/
+        id: 1_738_chatgpt
+      - title: DeepSeek
+        url: https://chat.deepseek.com/
+        id: 2_738_deepseek
+      - title: Gemini
+        url: https://gemini.google.com/u/1/app
+        id: 3_738_gemini
+      - title: Claude
+        icon: >-
+          https://cdn.brandfetch.io/idW5s392j1/w/338/h/338/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1738315794862
+        url: https://claude.ai/new
+        id: 4_738_claude
+      - title: Adobe Firefly
+        url: https://firefly.adobe.com/
+        id: 5_738_adobefirefly
+      - title: NotebookLM
+        url: https://notebooklm.google.com/
+        id: 6_738_notebooklm
