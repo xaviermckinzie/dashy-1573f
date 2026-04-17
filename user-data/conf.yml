@@ -1,15 +1,16 @@
 pageInfo:
-  title: Home Lab & New Tab
-  description: Lots of links and stuff
+  title: Collaboration Workspace
+  description: Daily tools, demos, and lab environments in one place
   navLinks:
     - title: GMail
       path: http://mail.sandxdesigns.com/
       target: sametab
-    - title: Home
-      path: http://www.demo.org/
+    - title: Dashy Local Version
+      path: http://192.168.128.112:8086/
       target: sametab
     - title: Dashy GitHub
       path: https://github.com/lissy93/dashy
+      target: newtab
     - title: Dashy Docs
       path: https://dashy.to/docs/
       target: newtab
@@ -24,6 +25,45 @@ appConfig:
   defaultOpeningMethod: sametab
   hideComponents:
     hideFooter: true
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+  startingView: default
+  statusCheck: false
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    openUrlsDirectly: false
+    searchEngine: duckduckgo
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: false
+  enableMaterialDesignIcons: false
+  auth:
+    enableGuestAccess: false
+    users: []
+    enableOidc: false
+    oidc:
+      adminRole: 'false'
+      adminGroup: 'false'
+    enableHeaderAuth: false
+    headerAuth:
+      userHeader: REMOTE_USER
+      proxyWhitelist: []
+    enableKeycloak: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
 sections:
   - name: Work / Core Apps
     displayData:
@@ -39,7 +79,6 @@ sections:
           https://cdn.brandfetch.io/idchmboHEZ/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1727706673120
         url: https://www.microsoft365.com/apps?auth=2&home=1
         statusCheck: true
-        statusCheckInterval: 0
         id: 0_1359_mapps
       - title: NetSuite
         description: Oracle NetSuite
@@ -152,6 +191,17 @@ sections:
           https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
         url: https://customerservice.cloudapps.cisco.com
         id: 7_2428_partnercsh
+      - title: Webex Beta
+        icon: favicon
+        url: https://gobeta.webex.com/
+        target: sametab
+        id: 8_2428_webexbeta
+      - title: Room Calculator
+        description: Cisco Video Room Calculator
+        icon: favicon
+        url: https://collabexperience.com/
+        target: sametab
+        id: 9_2428_roomcalculator
     icon: >-
       https://apps.cisco.com/Commerce/staticContent/ngws_MARCHMR_031526V1/images/vNextCiscologo.png
   - name: Webex Contact Center Demos, Labs, and Developer
@@ -184,7 +234,6 @@ sections:
         icon: favicon
         url: https://www.airtable.com/
         statusCheck: true
-        statusCheckInterval: 0
         id: 3_4243_airtable
       - title: CE UI Editor
         description: Cisco CE UI Editor (Standalone)
@@ -228,6 +277,7 @@ sections:
         icon: >-
           https://cdn.brandfetch.io/idchmboHEZ/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1727706673120
         url: https://status.cloud.microsoft/
+        statusCheck: true
         id: 2_1936_microsoftservicehealthstatus
   - name: Vendor Resources
     displayData:
@@ -279,71 +329,53 @@ sections:
         icon: >-
           https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/radarr-4k.svg
         url: http://radarr.sandx.lan/
-        statusCheck: true
-        statusCheckInterval: 0
         id: 0_696_radarrmovies
       - title: Sonarr - TV Shows
         icon: >-
           https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/sonarr-4k.svg
         url: http://sonarr.sandx.lan/
-        statusCheck: true
-        statusCheckInterval: 0
         id: 1_696_sonarrtvshows
       - title: SABnzbd
         icon: >-
           https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/sabnzbd.svg
         url: http://sabnzbd.sandx.lan/
-        statusCheck: true
-        statusCheckInterval: 0
         id: 2_696_sabnzbd
       - title: Portainer by IP
         description: Portainer (bypass proxy using IP)
         icon: >-
           https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/portainer-dark.svg
         url: https://192.168.128.112:9443/#!/home
-        statusCheck: true
-        statusCheckInterval: 0
         id: 3_696_portainerbyip
       - title: Nginx PM
         description: Nginx Proxy Manager
         icon: >-
           https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/nginx-proxy-manager.svg
         url: http://proxy.sandx.lan/
-        statusCheck: true
-        statusCheckAllowInsecure: true
-        statusCheckInterval: 0
         id: 4_696_nginxpm
       - title: pfSense Firewall
         description: ''
         icon: >-
           https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/pfsense.svg
         url: https://fw.sandx.lan:8224/
-        statusCheck: true
-        statusCheckAllowInsecure: true
-        statusCheckInterval: 0
         id: 5_696_pfsensefirewall
       - title: Plex
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/plex.svg
         url: http://plex.sandx.lan/
-        statusCheck: true
-        statusCheckInterval: 0
         id: 6_696_plex
       - title: Audio Bookshelf
         icon: >-
           https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/audiobookshelf.svg
         url: http://audiobookshelf.sandx.lan/
-        statusCheck: true
-        statusCheckAllowInsecure: true
-        statusCheckInterval: 0
         id: 7_696_audiobookshelf
       - title: Podgrab
         icon: >-
           https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/podgrab.png
         url: http://podgrab.sandx.lan/
-        statusCheck: true
-        statusCheckAllowInsecure: true
-        statusCheckInterval: 0
         id: 8_696_podgrab
+      - title: Home Assistant
+        url: http://homeassistant.sandx.lan/
+        target: sametab
+        id: 9_696_homeassistant
   - name: LLM and AI
     displayData:
       sortBy: default
