@@ -2,8 +2,8 @@ pageInfo:
   title: Collaboration Workspace
   description: Daily tools, demos, and lab environments in one place
   navLinks:
-    - title: GMail
-      path: http://mail.sandxdesigns.com/
+    - title: Netlify
+      path: https://app.netlify.com/login
       target: sametab
     - title: Dashy Local Version
       path: http://192.168.128.112:8086/
