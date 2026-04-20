@@ -47,9 +47,6 @@ appConfig:
     enableGuestAccess: false
     users: []
     enableOidc: false
-    oidc:
-      adminRole: 'false'
-      adminGroup: 'false'
     enableHeaderAuth: false
     headerAuth:
       userHeader: REMOTE_USER
@@ -64,6 +61,7 @@ appConfig:
   disableUpdateChecks: false
   disableSmartSort: false
   enableErrorReporting: false
+  statusCheckInterval: 0
 sections:
   - name: Work / Core Apps
     displayData:
@@ -118,8 +116,9 @@ sections:
         id: 6_1359_myintelisys
       - title: CG WCH
         description: CG Webex Control Hub
+        icon: >-
+          https://cdn.brandfetch.io/idtxaPRefk/theme/dark/symbol.svg?c=1bxid64Mup7aczewSAYMX&t=1673970671028
         url: https://admin.webex.com/login?email=xavier.mckinzie@cumberland.com
-        icon: favicon
         id: 7_1359_cgwch
       - title: Sharefile
         description: Progress Sharefile
@@ -129,8 +128,9 @@ sections:
         id: 8_1359_sharefile
       - title: ZoomUp
         description: Zoom Up Partner Portal
+        icon: >-
+          https://cdn.brandfetch.io/id3aO4Szj3/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1667574547253
         url: https://mypartnerportal.zoom.us/s
-        icon: favicon
         id: 9_1359_zoomup
       - title: Zoom Learning
         description: Zoom Learning Portal
@@ -157,51 +157,58 @@ sections:
         url: https://salesresources.cisco.com/
         icon: favicon
         id: 1_2428_salesconnect
-      - title: Seller Rewards
-        description: Seller Rewards
-        icon: >-
-          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
-        url: https://sellerrewards.cisco.com
-        id: 2_2428_sellerrewards
-      - title: Workspace Designer
-        description: Workspace Designer
-        url: https://www.webex.com/us/en/workspaces/workspace-designer.html
-        icon: favicon
-        id: 3_2428_workspacedesigner
-      - title: Cisco Learning Network
-        description: Cisco Learning Network Space
-        icon: >-
-          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
-        url: https://learningspace.cisco.com/
-        id: 4_2428_ciscolearningnetwork
-      - title: Cisco U
-        description: Cisco U
-        icon: >-
-          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
-        url: https://u.cisco.com/for-you
-        id: 5_2428_ciscou
-      - title: Partner Tools
-        description: Cisco Partner Tools
-        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/cisco.svg
-        url: https://cisco.com/go/partnertools
-        id: 6_2428_partnertools
-      - title: Partner CSH
-        description: Customer Service Hub (XaaS Cases)
-        icon: >-
-          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
-        url: https://customerservice.cloudapps.cisco.com
-        id: 7_2428_partnercsh
-      - title: Webex Beta
-        icon: favicon
-        url: https://gobeta.webex.com/
-        target: sametab
-        id: 8_2428_webexbeta
       - title: Room Calculator
         description: Cisco Video Room Calculator
         icon: favicon
         url: https://collabexperience.com/
         target: sametab
-        id: 9_2428_roomcalculator
+        id: 2_2428_roomcalculator
+      - title: Workspace Designer
+        description: Workspace Designer
+        url: https://www.webex.com/us/en/workspaces/workspace-designer.html
+        icon: favicon
+        id: 3_2428_workspacedesigner
+      - title: Seller Rewards
+        description: Seller Rewards
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://sellerrewards.cisco.com
+        id: 4_2428_sellerrewards
+      - title: Cisco Learning Network
+        description: Cisco Learning Network Space
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://learningspace.cisco.com/
+        id: 5_2428_ciscolearningnetwork
+      - title: Cisco U
+        description: Cisco U
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://u.cisco.com/for-you
+        id: 6_2428_ciscou
+      - title: Partner Tools
+        description: Cisco Partner Tools
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/cisco.svg
+        url: https://cisco.com/go/partnertools
+        id: 7_2428_partnertools
+      - title: Partner CSH
+        description: Customer Service Hub (XaaS Cases)
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://customerservice.cloudapps.cisco.com
+        id: 8_2428_partnercsh
+      - title: Webex Beta
+        icon: favicon
+        url: https://gobeta.webex.com/
+        target: sametab
+        id: 9_2428_webexbeta
+      - title: Quote Collab
+        description: Cisco Quote Collab
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://cqc.cloudapps.cisco.com/home#/
+        target: sametab
+        id: 10_2428_quotecollab
     icon: >-
       https://apps.cisco.com/Commerce/staticContent/ngws_MARCHMR_031526V1/images/vNextCiscologo.png
   - name: Webex Contact Center Demos, Labs, and Developer
@@ -231,7 +238,7 @@ sections:
         id: 2_4243_wxccpartnersuccess
       - title: Airtable
         description: RESTAPI Supported Database for FREE
-        icon: favicon
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/airtable.svg
         url: https://www.airtable.com/
         statusCheck: true
         id: 3_4243_airtable
@@ -279,6 +286,12 @@ sections:
         url: https://status.cloud.microsoft/
         statusCheck: true
         id: 2_1936_microsoftservicehealthstatus
+      - title: Samsung Members
+        description: Members Community
+        icon: favicon
+        url: https://us.community.samsung.com/
+        target: sametab
+        id: 3_1936_samsungmembers
   - name: Vendor Resources
     displayData:
       sortBy: default
@@ -374,8 +387,16 @@ sections:
         id: 8_696_podgrab
       - title: Home Assistant
         url: http://homeassistant.sandx.lan/
+        icon: >-
+          https://cdn.brandfetch.io/id_cfQuXTk/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1772366831382
         target: sametab
         id: 9_696_homeassistant
+      - title: Immich
+        description: Google Photos Replacement
+        icon: favicon
+        url: http://192.168.128.112:2283/
+        target: sametab
+        id: 10_696_immich
   - name: LLM and AI
     displayData:
       sortBy: default
@@ -386,28 +407,32 @@ sections:
     items:
       - title: Open WebUI (Local PC)
         icon: >-
-          https://cdn.brandfetch.io/id-hVPEl-N/w/1000/h/1000/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1770832591835
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/open-webui.svg
         url: http://localhost:8080/
         id: 0_738_openwebuilocalpc
       - title: ChatGPT
         icon: >-
-          https://cdn.brandfetch.io/id2UDPob7G/w/400/h/400/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1741663805615
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/openai-light.svg
         url: https://chatgpt.com/
         id: 1_738_chatgpt
       - title: DeepSeek
         url: https://chat.deepseek.com/
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/deepseek.svg
         id: 2_738_deepseek
       - title: Gemini
         url: https://gemini.google.com/u/1/app
         id: 3_738_gemini
       - title: Claude
         icon: >-
-          https://cdn.brandfetch.io/idW5s392j1/w/338/h/338/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1738315794862
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/claude-ai.svg
         url: https://claude.ai/new
         id: 4_738_claude
       - title: Adobe Firefly
         url: https://firefly.adobe.com/
         id: 5_738_adobefirefly
       - title: NotebookLM
+        icon: >-
+          https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/notebook-lm-dark.svg
         url: https://notebooklm.google.com/
         id: 6_738_notebooklm
