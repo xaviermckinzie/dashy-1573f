@@ -371,7 +371,7 @@ sections:
         description: Nginx Proxy Manager
         icon: >-
           https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/nginx-proxy-manager.svg
-        url: http://proxy.sandx.lan/
+        url: http://192.168.128.112:81/nginx/proxy
         id: 4_696_nginxpm
       - title: pfSense Firewall
         description: ''
