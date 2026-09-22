@@ -35,7 +35,6 @@ appConfig:
   startingView: default
   statusCheck: false
   faviconApi: allesedv
-  routingMode: history
   enableMultiTasking: false
   widgetsAlwaysUseProxy: false
   webSearch:
