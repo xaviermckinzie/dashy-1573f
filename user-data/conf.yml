@@ -2,6 +2,9 @@ pageInfo:
   title: Collaboration Workspace
   description: Daily tools, demos, and lab environments in one place
   navLinks:
+    - title: GMail
+      path: https://mail.google.com
+      target: sametab
     - title: Netlify
       path: https://app.netlify.com/login
       target: sametab
@@ -250,7 +253,7 @@ sections:
       - title: Webex CC Labs
         description: Webex CC Lab guides · Labs Library
         icon: favicon
-        url: ' https://webexcc.github.io/'
+        url: 'https://webexcc-sa.github.io/labs/'
         id: 5_4243_webexcclabs
       - title: WxConnect Sandbox
         description: Webex Connect Sandbox
@@ -292,6 +295,12 @@ sections:
         url: https://us.community.samsung.com/
         target: sametab
         id: 3_1936_samsungmembers
+      - title: Cisco Video Portal
+        description: Cisco Video Portal
+        icon: >-
+          https://cdn.brandfetch.io/ida_xaMYlM/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1742365554659
+        url: https://video.cisco.com/
+        id: 4_1936_ciscovideoportal
   - name: Vendor Resources
     displayData:
       sortBy: default
